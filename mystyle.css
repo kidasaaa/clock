@@ -1,0 +1,124 @@
+header {
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	color: #000000;
+	background-color: #86bbd5;
+	text-align: center;
+}
+
+h1 {
+	font-size: 40px;
+	padding-top: 90px;
+}
+
+.image_container {
+	display: inline;
+}
+
+.image_container img {
+	max-height: 200px;
+	max-width: 200px;
+	object-fit: cover;
+}
+
+/* CLOCK*/
+.clock {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #b50073;
+	letter-spacing: 8px;
+    font-size: 60px;
+}
+
+.clock:hover {
+	font-size: 90px;
+	position: absolute;
+}
+
+.clock:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #b50073;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+  
+.clock:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+  
+/* DARK MODE BUTTON*/
+
+.darkMode{
+	float: right;
+}
+
+.darkMode {
+	font-size: 18px;
+	background-color: #b50073;
+	border: 4px;
+	border-color: #000000;
+	color: #000000;
+	margin: 4px;
+	padding: 10px 24px;
+	text-align: center;
+	text-decoration: none;
+	opacity: 0.6;
+	transition: 0.3s;
+	border-radius: 6px;
+}
+
+.darkMode:hover {
+	opacity: 1
+}
+
+/* DARK MODE STYLING*/
+.dark-mode {
+	background-color: #418baf;
+	color: #86bbd5;
+}
+
+/* CIRCLE ANIMATION */
+
+.sun {
+	position: absolute;
+    left: 43%;
+    top: 50%;
+	-webkit-animation: circleAnimation 5s linear infinite; 
+	-moz-animation: circleAnimation 5s linear infinite; 
+	-o-animation: circleAnimation 5s linear infinite; 
+	animation: circleAnimation 5s linear infinite; 
+}
+
+@-webkit-keyframes circleAnimation {
+    from { -webkit-transform: translateX(150px) rotate(0deg); }
+    to   { -webkit-transform: translateX(150px) rotate(-360deg); }
+}
+
+@-moz-keyframes circleAnimation {
+    from { -moz-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@-o-keyframes circleAnimation {
+    from { -o-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@keyframes circleAnimation {
+    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+

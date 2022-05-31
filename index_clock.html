@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Space Clock</title>
+		<link rel="stylesheet" type="text/css" href="styles_clock/mystyle.css">
+		<script src="scripts_clock/main.js" defer></script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	</head>
+<header>
+	<button onclick="darkMode()" class="darkMode" id="dark-mode">Nighttime</button>
+	<button onclick="lightMode()" class="darkMode" id="light-mode">Daytime</button>
+</header>
+
+	<body>
+		<!--TEXT ON ALL PAGES-->
+		<h1>the brand new age</h1>
+		<h3>On this website you can take trip down memory lane and remember how time used to work back on the Earth.</h3>
+
+		<!--ANIMATIONS: images-->
+		<div class="image_container">
+			<div class="sun">
+				<img src="images_clock/Sun.png" id="sunImg"/> 
+			</div>
+		</div>
+		<!--CLOCK -->
+		<div id="CLOCK" class="clock" onload="showTime()"></div>
+
+
+
+	</body>
+
+</html>
